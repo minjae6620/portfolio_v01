@@ -1851,7 +1851,7 @@ body.body-lock {
   z-index: 100;
   position: fixed;
   top: auto;
-  bottom: 10%;
+  bottom: 10vh;
   right: 5%;
   width: 72px;
   height: 72px;
