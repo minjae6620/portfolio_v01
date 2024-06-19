@@ -2029,4 +2029,20 @@ body.body-lock {
   }
 }
 
-/*# sourceMappingURL=../maps/components.css.map */
+
+
+/* 2024.06.19 로컬 수정 */
+.popup-figure {
+  display: block;
+  width: 100%;
+}
+
+.popup-img {
+  display:block;
+  width:100%;
+}
+.popup-img + .popup-img {
+  margin-top: clamp(25px, calc(50 / 1920 * 100vw), calc(50 / 1920 * 100vw));
+}
+
+

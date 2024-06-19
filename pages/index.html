@@ -35,12 +35,12 @@
 	<div class="swiper kv-swiper">
 		<div class="swiper-wrapper kv-swiper__wrapper">
 			<div class="swiper-slide kv-swiper__slide">
-				<div class="kv-swiper__linker"></div>
+				<a href="https://naver.com" target="_blank" class="kv-swiper__linker"></a>
 				<img src="../images/main/pc/img-kv-01.jpg" alt="포트폴리오 kv 01번 슬라이드" class="kv-swiper__img hidden-m">
 				<img src="../images/main/mo/img-kv-01@2x.jpg" alt="포트폴리오 kv 01번 슬라이드" class="kv-swiper__img hidden-p">
 			</div>
 			<div class="swiper-slide kv-swiper__slide">
-				<div class="kv-swiper__linker"></div>
+				<a href="https://naver.com" target="_blank" class="kv-swiper__linker"></a>
 				<img src="../images/main/pc/img-kv-01.jpg" alt="포트폴리오 kv 02번 슬라이드" class="kv-swiper__img hidden-m">
 				<img src="../images/main/mo/img-kv-01@2x.jpg" alt="포트폴리오 kv 01번 슬라이드" class="kv-swiper__img hidden-p">
 			</div>
@@ -90,37 +90,41 @@
 		<div class="tab">
 			<div class="tab__btn-wrap">
 				<button class="tab__btn active tab-all-btn on" data-filter="*">전체보기</button>
+				<!-- 탭메뉴 필터영역 data-filter 의 인덱스를 하단의 .tab__item 의 data-type 과 매치시킬 것 -->
 				<button class="tab__btn" data-filter="no01">웹디자인</button>
 				<button class="tab__btn" data-filter="no02">상세페이지</button>
 				<button class="tab__btn" data-filter="no03">팝업</button>
 				<button class="tab__btn" data-filter="no04">배너</button>
 				<button class="tab__btn" data-filter="no05">PPT</button>
+				<!-- // 탭메뉴 필터영역 data-filter 의 인덱스를 하단의 .tab__item 의 data-type 과 매치시킬 것 -->
 			</div>
 
 			<div class="tab__item-wrap">
 				<div class="tab__item" data-type="no01">
 					<a href="#popup01" class="tab__item-linker tab__item-01-01 popup-open">
 						<p class="tab__item-sub-tit">웹디자인</p>
-						<p class="tab__item-main-tit">디자인 포트폴리오 Ver.1</p>
+						<p class="tab__item-main-tit">키크론 브랜드스토어</p>
 						<p class="tab__item-shortcut">바로가기 ></p>
 					</a>
 				</div>
 				<div class="tab__item" data-type="no01">
-					<a href="#popup02" class="tab__item-linker tab__item-01-02 popup-open">
+					<!-- 클릭 시 다이렉트로 페이지 이동할 영역 popup-open 클래스 제외할 것 -->
+					<a href="https://minjae6620.github.io/old-portfolio/" target="_blank" class="tab__item-linker tab__item-01-02">
+						<p class="tab__item-sub-tit">웹디자인</p>
+						<p class="tab__item-main-tit">디자인 포트폴리오 Ver.1</p>
+						<p class="tab__item-shortcut">바로가기 ></p>
+					</a>
+					<!-- // 클릭 시 다이렉트로 페이지 이동할 영역 popup-open 클래스 제외할 것 -->
+				</div>
+				<div class="tab__item" data-type="no01">
+					<a href="https://minjae6620.github.io/musinsa/" target="_blank" class="tab__item-linker tab__item-01-03">
 						<p class="tab__item-sub-tit">웹디자인</p>
 						<p class="tab__item-main-tit">디자인 포트폴리오 Ver.1</p>
 						<p class="tab__item-shortcut">바로가기 ></p>
 					</a>
 				</div>
 				<div class="tab__item" data-type="no01">
-					<a href="#popup03" class="tab__item-linker tab__item-01-03 popup-open">
-						<p class="tab__item-sub-tit">웹디자인</p>
-						<p class="tab__item-main-tit">디자인 포트폴리오 Ver.1</p>
-						<p class="tab__item-shortcut">바로가기 ></p>
-					</a>
-				</div>
-				<div class="tab__item" data-type="no01">
-					<a href="#popup04" class="tab__item-linker tab__item-01-04 popup-open">
+					<a href="https://minjae6620.github.io/canon/" target="_blank" class="tab__item-linker tab__item-01-04">
 						<p class="tab__item-sub-tit">웹디자인</p>
 						<p class="tab__item-main-tit">디자인 포트폴리오 Ver.1</p>
 						<p class="tab__item-shortcut">바로가기 ></p>
@@ -200,6 +204,13 @@
 			<div class="popup-item" id="popup08">
 				<div class="popup-inner">
 					<p class="popup-test-text">popup08</p>
+					<!-- 팝업내부 이미지 영역 -->
+					<figure class="popup-figure">
+						<img src="../images/main/pc/01.png" alt="" class="popup-img">
+						<img src="../images/main/pc/02.png" alt="" class="popup-img">
+						<img src="../images/main/pc/03.png" alt="" class="popup-img">
+					</figure>
+					<!-- // 팝업내부 이미지 영역 -->
 				</div>
 			</div>
 		</div>
